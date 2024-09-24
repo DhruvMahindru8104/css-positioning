@@ -1,0 +1,2 @@
+Fixed and absolute (dono apni jgh se uth jate hai jb position lgao )
+Example- agr ek flex box hai usmein aapne kisi bhi child element ko fixed ya absolute position dedi to vo uth jayenge like this

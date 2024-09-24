@@ -1,0 +1,1 @@
+Hmare paas ek flex box hai jismein 1,2,3 name k elements hai . Pr child 1 ko humne absolute property dedi to yeh apni jgh se upr uth gya and ab vo flex box ka hisa nhi . aap image mein dekh hi skte ho 

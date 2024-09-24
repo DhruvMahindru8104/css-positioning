@@ -1,0 +1,94 @@
+Yeh rahe examples Fixed, Sticky, Absolute, aur Relative positioning ke liye:
+
+1. Fixed Position Example:
+
+<div class="fixed-box">Fixed Position</div>
+
+.fixed-box {
+    position: fixed;
+    top: 10px;  /* Viewport ke top se 10px distance */
+    right: 20px; /* Viewport ke right se 20px distance */
+    background-color: yellow;
+    padding: 10px;
+    color: black;
+}
+
+Output: Yeh element hamesha viewport ke top-right corner par fix rahega, chahe aap page ko scroll karein ya nahi.
+
+
+
+---
+
+2. Sticky Position Example:
+
+<div class="sticky-container">
+    <div class="sticky-box">Sticky Position</div>
+    <p>Scroll down to see the sticky effect.</p>
+    <p>More content here...</p>
+    <p>Even more content...</p>
+</div>
+
+.sticky-box {
+    position: sticky;
+    top: 0px;  /* Scroll hone ke baad yeh viewport ke top par chipak jayega pr  */
+    background-color: lightgreen;
+    padding: 10px;
+}
+.sticky-container {
+    height: 200px; /* To show scrolling effect */
+}
+
+Output: Scroll hone ke baad, yeh element viewport ke top par stick ho jayega jab tak aap scroll karenge.
+
+
+
+---
+
+3. Absolute Position Example:
+
+<div class="parent-box">
+    Parent Box
+    <div class="absolute-box">Absolute Position</div>
+</div>
+
+.parent-box {
+    position: relative; /* Is parent ke reference se child move karega */
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 20px;  /* Parent ke top se 20px neeche */
+    left: 30px; /* Parent ke left se 30px right */
+    background-color: pink;
+    padding: 10px;
+}
+
+Output: Child element parent ke andar 20px neeche aur 30px right move karega, because parent has position: relative. 
+agr parent ki position nhi hai to grandparent ki position pe jayega and agr usmein bhi nhi to grandparent k parent . agr child k kisi bhi parent k paas koi position nhi to yeh html se apni position change krega.
+
+
+
+---
+
+4. Relative Position Example:
+
+<div class="relative-box">Relative Position</div>
+
+.relative-box {
+    position: relative;
+    top: 20px;  /* Apni asli jagah se 20px neeche move karega */
+    left: 30px; /* Apni asli jagah se 30px right move karega */
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+Output: Yeh element apni original position se 20px neeche aur 30px right shift hoga, lekin uski space document flow mein reserved rahegi.
+
+
+
+---
+
+Yeh examples aapko Fixed, Sticky, Absolute, aur Relative positioning ka actual implementation samjhate hain. Har element apne specific rule ke hisaab se behave karega.

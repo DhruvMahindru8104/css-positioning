@@ -1,0 +1,3 @@
+Ismein flex box mein humne child 1 ko relative property di .
+Is pr vo apni jgh pr hi hai utha nhi and vha se top-20 se niche khisk gya. 
+But abhi bhi time pe child 1 abhi bhi flex box ka hissa hai 
