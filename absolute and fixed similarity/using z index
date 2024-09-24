@@ -1,0 +1,23 @@
+Z-index ek CSS property hoti hai jo layers ko control karti hai, matlab jab do ya zyada elements overlap ho rahe hote hain, to z-index decide karta hai kaunsa element upar dikhna chahiye aur kaunsa neeche.
+
+Z-index ki value number hoti hai:
+
+- **Higher z-index value** ka element upar dikhega.
+- **Lower z-index value** ka element neeche chhup jayega.
+
+Agar do elements ka z-index same ho ya unka z-index set nahi ho, to jo DOM me baad me aayega, woh upar dikhai dega.
+
+**Example:**
+```css
+.div1 {
+  position: absolute;
+  z-index: 1; /* Yeh neeche dikhai dega */
+}
+
+.div2 {
+  position: absolute;
+  z-index: 10; /* Yeh upar dikhai dega */
+}
+```
+
+Important cheez: Z-index tabhi kaam karta hai jab element `position: relative`, `absolute`, `fixed`, ya `sticky` me ho.
