@@ -1,0 +1,28 @@
+problem kya hai - kyi baar humare parent element mein bhut sare child aa jate hai jiske karan kuch child parent k bah nikl jaate and unwanted horizontal scrolling aa jati browser mein jiske karan layout kharab ho jata hai .
+problem solution - use overflow-hidden (yeh child element ko parent k bahr nhi jane degi iski jgh vo child elements ko hide kr degi jiske karan unwanted horizontal scrolling nhi  aayegi ).
+-overflow hidden property hmesha parent div mein lgegi . 
+
+
+
+`overflow-hidden` property ko aap simple tareeke se is tarah samajh sakte hain: Jab kisi element ke andar content uske boundaries se bahar nikalne lagta hai, toh hum `overflow-hidden` use karte hain taaki jo extra content bahar nikal raha hai, woh chhup jaye.
+
+Tailwind CSS me `overflow-hidden` ka use kaise karna hai, isko ek example se samjhate hain:
+
+### Example:
+
+```html
+<div class="w-64 h-32 bg-blue-500 overflow-hidden">
+  <p class="text-white">
+    Yeh ek lamba text hai jo is div ke andar fit nahi ho raha hai. Overflow-hidden lagane se yeh text jo div se bahar nikal raha hai, vo ab dikhai nahi dega.
+  </p>
+</div>
+```
+
+### Explanation:
+- Yahaan pe `w-64` aur `h-32` se humne div ka width aur height set kiya hai.
+- `overflow-hidden` lagane se jo text div se bahar nikal raha hai, vo chhup jayega.
+- Agar `overflow-hidden` ko hata do, toh text div ke bahar nikal ke dikhai dega.
+
+Yeh `overflow-hidden` ka basic use hai Tailwind me.
+
+aur jankari k liye https://tailwindcss.com/docs/overflow is link pe click kro .
